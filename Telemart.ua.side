@@ -1,0 +1,285 @@
+{
+  "id": "787ef448-1ae7-43b9-bac9-f7f08dc7667d",
+  "version": "2.0",
+  "name": "Telemart.ua",
+  "url": "https://telemart.ua",
+  "tests": [{
+    "id": "38d75d7c-0728-43ab-97a0-b07c53e1e731",
+    "name": "test of search",
+    "commands": [{
+      "id": "b89aa5c5-5e14-408d-a7e4-90ca613c5ccf",
+      "comment": "",
+      "command": "open",
+      "target": "https://telemart.ua",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "97cad59a-4d8b-4aee-86b0-840e6b2f46ca",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "999x768",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6f2a791a-ab9d-483d-8deb-569248442b4c",
+      "comment": "",
+      "command": "store",
+      "target": "RTX 3070",
+      "targets": [],
+      "value": "searchText"
+    }, {
+      "id": "3a591124-a34f-442d-a61a-ec23cf488953",
+      "comment": "",
+      "command": "echo",
+      "target": "${searchText}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7dcf53ed-d53e-408b-94ea-fe6c9dea754f",
+      "comment": "",
+      "command": "click",
+      "target": "id=header_search_term",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0b364405-4b9a-4761-af59-bfc360e9c20d",
+      "comment": "",
+      "command": "type",
+      "target": "id=header_search_term",
+      "targets": [],
+      "value": "${searchText}"
+    }, {
+      "id": "aae62340-20f7-4530-92c9-bfe70b49c1c4",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=header_search_term",
+      "targets": [
+        ["id=header_search_term", "id"],
+        ["name=search_que", "name"],
+        ["css=.c-search-light #header_search_term", "css:finder"],
+        ["xpath=//input[@id='header_search_term']", "xpath:attributes"],
+        ["xpath=//body[@id='index']/div/div/div/header/div[2]/div/div/div[2]/div/form/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "c3548136-afe6-4e20-81a8-05dfbc2107ae",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[contains(text(),'Відеокарта Asus ROG GeForce RTX 3070 STRIX OC 8192MB (ROG-STRIX-RTX3070-O8G-GAMING FR) Factory Recertified')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "92aa24cb-f3ca-4066-a8b9-aba4b1640e71",
+      "comment": "",
+      "command": "click",
+      "target": "css=.b-i-product-wrap-price:nth-child(1) > .b-link-add2bas",
+      "targets": [
+        ["css=.b-i-product-wrap-price:nth-child(1) > .b-link-add2bas", "css:finder"],
+        ["xpath=(//a[contains(text(),'Купити')])[13]", "xpath:link"],
+        ["xpath=//body[@id='product']/div[3]/div/div/div[2]/div/div/div[2]/div[2]/div/div/div[2]/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'javascript: void(0);')])[26]", "xpath:href"],
+        ["xpath=//div[2]/div/div/div[2]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "9c221597-cb1c-4a29-8bd8-a4d883cbc85a",
+    "name": "test buy SSD for REC*",
+    "commands": [{
+      "id": "674de297-d879-4721-9b9b-582fb9a99186",
+      "comment": "",
+      "command": "open",
+      "target": "/ua/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8f63ab32-e87e-4eb4-9667-75c9aead6e7a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1170x824",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7d1ac97e-37cf-4d2a-908a-060119234d36",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=SSD-диск Kingston NV2 3D NAND 500GB M.2 (2280 PCI-E) NVMe x4 (SNV2S/500G)",
+      "targets": [
+        ["linkText=SSD-диск Kingston NV2 3D NAND 500GB M.2 (2280 PCI-E) NVMe x4 (SNV2S/500G)", "linkText"],
+        ["css=.b-i-product-hover .b-i-product-name > a", "css:finder"],
+        ["xpath=//a[contains(text(),'SSD-диск Kingston NV2 3D NAND 500GB M.2 (2280 PCI-E) NVMe x4 (SNV2S/500G)')]", "xpath:link"],
+        ["xpath=//body[@id='category']/div/div/div/div[2]/div/div/div[2]/div[3]/div/div[2]/div/div/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://telemart.ua/ua/products/kingston-nv2-3d-nand-500gb-m2-2280-pci-e-nvme-x4-snv2s500g/')]", "xpath:href"],
+        ["xpath=//div[3]/div/div[2]/div/div/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'SSD-диск Kingston NV2 3D NAND 500GB M.2 (2280 PCI-E) NVMe x4 (SNV2S/500G)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4a0bdb85-6bf9-4562-9840-6fa80f42d491",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Купити",
+      "targets": [
+        ["linkText=Купити", "linkText"],
+        ["css=.b-i-product-wrap-price:nth-child(1) > .b-link-add2bas", "css:finder"],
+        ["xpath=(//a[contains(text(),'Купити')])[13]", "xpath:link"],
+        ["xpath=//body[@id='product']/div/div/div/div[2]/div/div/div[2]/div[2]/div/div/div[2]/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'javascript: void(0);')])[19]", "xpath:href"],
+        ["xpath=//div[2]/div[2]/div/div/div[2]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "c7c5c92f-7fc8-4819-ba27-479608494fb3",
+    "name": "feedbeck",
+    "commands": [{
+      "id": "c15e8deb-690e-4e26-8585-d3003891a44a",
+      "comment": "",
+      "command": "open",
+      "target": "/ua/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "21b891e7-7fd6-4bf9-8482-1cf74017f0ad",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1100x800",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b8c2496f-4f6b-45d3-be64-01945a0c308c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.b-link-callback:nth-child(2) > span",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7da975bf-8b27-436d-9f16-bad6646dd2a1",
+      "comment": "",
+      "command": "click",
+      "target": "id=popupInputName",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2ed96aac-b7c8-40aa-a48f-e97ba8ba9a98",
+      "comment": "",
+      "command": "type",
+      "target": "id=popupInputName",
+      "targets": [],
+      "value": "Roman"
+    }, {
+      "id": "32e05973-d5c3-4ce2-afca-5668e2951294",
+      "comment": "",
+      "command": "type",
+      "target": "id=popupInputPhone",
+      "targets": [],
+      "value": "+380502044217"
+    }, {
+      "id": "55ee7e48-be7f-4f01-a847-5a5f4fd73369",
+      "comment": "",
+      "command": "click",
+      "target": "id=popupAreaComment",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "df668bae-76eb-4088-9d2d-0010b5c5d69e",
+      "comment": "",
+      "command": "type",
+      "target": "id=popupAreaComment",
+      "targets": [],
+      "value": "Передзвоніть мені по замовленню 134"
+    }, {
+      "id": "880d3aa4-685e-4cf8-b17e-18affb8fa287",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(3) > label",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "405dafc7-26e5-4260-a5e3-e302800c1266",
+      "comment": "",
+      "command": "click",
+      "target": "css=#cFeedbackForm > .b-btn",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "7daeb776-798e-4eb4-860a-ea5b004616c3",
+    "name": "login",
+    "commands": [{
+      "id": "24c31355-ffc0-4f29-8d31-9bac6b7aaf18",
+      "comment": "",
+      "command": "open",
+      "target": "/ua/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cbfd177f-0c9a-4769-b52e-bcea615ec5a8",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1100x800",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ac233b5a-7d81-4b76-80f1-665d5525fc15",
+      "comment": "",
+      "command": "click",
+      "target": "css=.b-link-enter > span",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5322fa23-2e0f-4ebd-8513-82140ba04962",
+      "comment": "",
+      "command": "click",
+      "target": "id=popupInputEnterMail",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "37465cfe-cd95-45d9-a730-c5194996d836",
+      "comment": "",
+      "command": "type",
+      "target": "id=popupInputEnterMail",
+      "targets": [],
+      "value": "0503456700"
+    }, {
+      "id": "f9c62ae4-7d10-47cc-ae3f-9260491cffeb",
+      "comment": "",
+      "command": "click",
+      "target": "id=popupInputEnterPasw",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c6f28020-0a89-4f2d-96f0-df60be264d8f",
+      "comment": "",
+      "command": "type",
+      "target": "id=popupInputEnterPasw",
+      "targets": [],
+      "value": "4444"
+    }, {
+      "id": "c95135f9-fc48-433a-8028-357ff67118bf",
+      "comment": "",
+      "command": "click",
+      "target": "css=#cEnterForm > .b-pasw-rememb > label",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ca84e3c0-97db-4ed6-a1bd-342dd01c6682",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//form[@id='cEnterForm']/button",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "a6c70a64-4b85-4626-9b07-fd3977c0c770",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["38d75d7c-0728-43ab-97a0-b07c53e1e731"]
+  }],
+  "urls": ["https://telemart.ua/"],
+  "plugins": []
+}
